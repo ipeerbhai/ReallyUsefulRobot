@@ -1,0 +1,2 @@
+This directory contains some of the parts "platterized" for a 250mm x 250mm bed 3d printer (like a prusa, as that's what I have).
+Some parts, like the Tires, are not fun to print.  Those have been sent to a bureau instead, and are not platterized.
