@@ -19,6 +19,20 @@ Other electronics so far include:
 -RPLIDAR A2
 -24v and 11.1v lipos, switches and wiring etc
 
+## Mechanical BOM
+
+This is a partial BOM of the parts needed to build one of these bots in different regions.
+
+### Wheel assembly
+The wheel assembly consists of the following parts:
+
+* Main axle -- one of either: Misumi FABSP20-454 (metric), or (imperial) cut2size metals (https://www.cut2sizemetals.com/stainless-steel/threaded%E2%88%92rod/141/) 3/4-10, 17 and 78" long.
+* Wheel bushings -- 4x Igus iglide RFM-2023-21 20mm plastic bushings
+* Wheel bearings -- 4x Nachi Bearing R14ZZ (technically, this bearing is .8mm too small -- may require quite the pounding to use, but it's 1/2 the price of the 23mm ID bearing)
+
+
+
+
 ## Software
 
 Obviously this isn't a comprehensive guide to ROS, you will need to undestand some core concepts before building this. The Robot runs ROS Melodic on Ubuntu 18.04. This is because the NVIDIA Xavier NX runs 18.04 by default.
@@ -41,7 +55,6 @@ https://github.com/ros-perception/slam_gmapping/tree/melodic-devel
 There is no launch file for gmapping, so having launched the rur_bringup package on the robot and launched Gmapping ( rosrun gmapping slam_gmapping scan:=scan ) you'll have to open Rviz and manually add/connect the topics for TF/Laser/Map etc. You can use the map server/saver command to save the map ( rosrun map_server map_saver -f ~/map )
 
 After the map is complete you can launch the rur_navigation package which will open Rviz automatically. Use: roslaunch rur_navigation rur_navigation.launch map_file:=$HOME/map.yaml   to connect to the map you saved.
-
 
 
 
