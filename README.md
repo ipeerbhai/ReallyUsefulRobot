@@ -27,8 +27,8 @@ This is a work-in-progress partial BOM of the parts needed to build one of these
 The wheel assembly consists of the following parts:
 
 * Main axle -- one of either: Misumi FABSP20-454 (metric), or (imperial) cut2size metals (https://www.cut2sizemetals.com/stainless-steel/threaded%E2%88%92rod/141/) 3/4-10 (diameter, thread pitch), 17 7/8" long.
-* Wheel bushings -- 4x Igus iglide RFM-2023-21 20mm plastic bushings
-* Wheel bearings -- 4x Nachi Bearing R14ZZ (technically, this bearing is .8mm too small -- may require quite the pounding to use, but it's 1/2 the price of the 23mm ID bearing)
+* Wheel bushings -- 4x Igus iglide RFM-2023-21 20mm plastic bushings might work, or these can be 3d printed to chosen axle.
+* Wheel bearings -- 4x vxb Bearing 6005zz (different seals are available -- the zz looks like the easiest to source.)
 
 ### Base
 * T-Slot Re-enforcement -- 2x OpenBuilds 2060 extrusion 250mm long (available in either black or clear anodized)
